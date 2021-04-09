@@ -1,0 +1,12 @@
+For the network spellchecker program, we were supposed to develop a server
+program that performs spell checking on demand. The spell checker server
+will acquire/read words and then see if the word is in the provided dictionary.
+If the word is in the provided dictionary then it will be considered spelled
+correctly and if it isn’t, then it will be considered misspelled. The dictionary
+file was provided to us (dictionary.txt) in a .txt format file and it consists of
+almost all the words that are found in a dictionary but not all the words. When the
+server starts, the main thread opens the dictionary file and reads it into some data
+structure accessible by all the threads in the program. You also create a fixed data
+structure that will be used to store the socket descriptors. The main thread creates a
+pool of workers and they begin accepting and distributing connection requests. The checked
+words will be logged into a log file with the help of the logger thread.

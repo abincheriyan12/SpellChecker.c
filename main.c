@@ -179,7 +179,18 @@ void *workerthread(void *args) {
 
 void *loggerthread(void *args)
 {
- //
+    // create log file
+    FILE *loggerfile = fopen("log.txt", "w");
+    fclose(loggerfile);
+    loggerfile = fopen("log.txt", "a");
+
+    while (1)
+    {
+        //
+
+    }
+
+    fclose(loggerfile);
 }
 
 char* wordformat(char *word)

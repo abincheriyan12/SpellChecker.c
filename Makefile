@@ -1,2 +1,2 @@
 spellchecker: spellchecker.c
-	gcc -o spellchecker spellchecker.c -pthread
+	gcc -o spellchecker spellchecker.c -pthread -Wall -Werror
